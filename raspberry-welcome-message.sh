@@ -53,19 +53,19 @@ echo "$(tput setaf 2)
    .~ .~~~..~.    Hostname...........: $HOSTNAME
   : .~.'~'.~. :   Uptime.............: $UPTIME
  ~ (   ) (   ) ~  IP LAN.............: $LANIP
-( : '~'.~.'~' : ) IP WLAN............: WLAN disabled
+( : '~'.~.'~' : ) IP WLAN............: $WLANIP
  ~ .~ (   ) ~. ~  Running Processes..: $RUNNING
   (  : '~' :  )   CPU Temp...........: $cpuTemp1.$cpuTempM°C
    '~ .~~~. ~'    GPU Temp...........: $gpuTemp0
        '~'	  SSD Temp...........: `smartctl -A /dev/sda | grep Temperature_Celsius | awk '{print $10}'`
 		  HDD Temp...........: Temp: `smartctl -A /dev/sdb | grep Temperature_Celsius | awk '{print $10}'`
 ==========================================================
- - Disk Space.........: $ROOT1 / $ROOT2
- - Memory used........: $MEMORY1 / $MEMORY2
- - Swap in use........: $SWAP1 / $SWAP2$(tput setaf 1)
+ 		  Disk Space.........: $ROOT1 / $ROOT2
+                  Memory used........: $MEMORY1 / $MEMORY2
+                  Swap in use........: $SWAP1 / $SWAP2$(tput setaf 1)
 ==========================================================
-Hyperlocal-Unbound:
-`update-check-unbound`
+		  Hyperlocal-Unbound:
+		  `update-check-unbound`
 ==========================================================
 $(tput sgr0)"
 
