@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# beauty ssh welcome message
-# required:
-# sudo apt-get install update-notifier-common
-
 
 export TERM=xterm-256color
 
