@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# beauty ssh welcome message
-# required:
-# sudo apt-get install update-notifier-common
-
-
 export TERM=xterm-256color
 
 cpuTemp0=$(cat /sys/class/thermal/thermal_zone2/temp)
@@ -58,9 +53,10 @@ echo "$(tput setaf 2)
  - Swap in use........: $SWAP1 / $SWAP2
  - IP LAN.............: $LANIP
 =====================================================
- - rootFS Disk Space..: $ROOT1 / $ROOT2
- - SSD Temperature....: `hddtemp /dev/sda`
- - HDD Temperature....: `hddtemp /dev/sdb`
+ - rootFS Disk Space...: $ROOT1 / $ROOT2
+ - SSD  Temperature....: `hddtemp /dev/sda`
+ - HDD  Temperature....: `hddtemp /dev/sdb`
+ - HDD2 Temperature....: `hddtemp /dev/sdc`
 =====================================================$(tput setaf 1)
 $(tput sgr0)"
 
