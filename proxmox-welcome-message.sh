@@ -57,7 +57,8 @@ echo "$(tput setaf 2)
  - SSD  Temperature....: `hddtemp /dev/sda`
  - HDD  Temperature....: `hddtemp /dev/sdb`
  - HDD2 Temperature....: `hddtemp /dev/sdc`
-=====================================================$(tput setaf 1)
+=====================================================
+$(tput setaf 1)
 $(tput sgr0)"
 
 
